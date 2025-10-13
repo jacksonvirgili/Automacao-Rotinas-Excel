@@ -1,38 +1,45 @@
- 
-README - Projeto VBA de Automação de Relatórios Financeiros
+# Projeto de Automação de Relatórios Comerciais
+## Sobre o Projeto
 
-OBJETIVO
+Este projeto foi desenvolvido com foco na acessibilidade de informações para toda a rede de colaboradores.
+Seu principal objetivo é fornecer indicadores (KPI’s) comerciais atualizados diariamente, permitindo que coordenadores e supervisores tomem decisões rápidas e baseadas em dados.
 
-Este projeto automatiza a rotina de processamento, atualização e salvamento de relatórios financeiros diários para uma empresa do ramo financeiro.
-As informações oficiais foram substituídas, restando apenas a lógica de execução de um projeto VBA em ambiente profissional.
-O projeto é apresentado de forma simplificada para fins educacionais e pode ser adaptado conforme a necessidade de cada ambiente profissional.
+Trata-se de uma solução desenvolvida e aplicada para a equipe comercial de uma empresa do setor financeiro.
+Todas as informações sigilosas foram substituídas, mantendo apenas a estrutura lógica e funcional do projeto.
 
-ESTRUTURA DO PROJETO
+## Estrutura de Pastas
 
-- Arquivo principal: Executável.xlsm (formato habilitado para macros)
-- Aba de controle: "EXEC"
-- Módulos VBA:
-  - Modulo1: Executável principal, declara variáveis e chama funções
-  - Modulo2: Funções divididas por etapas
+📁 ARQUIVOS DA REDE
+    └── Contém os arquivos com informações sobre hierarquias e metas.
 
-CONFIGURAÇÕES INICIAIS
+📁 RELATÓRIOS ACOMP. VENDAS DIÁRIO
+    ├── Matriz de KPI’s.
+    └── Subpastas organizadas por ano e mês (organizam o armazenamento dos relatórios finais).
 
-Na aba "EXEC", configure:
-- MÊS e ANO: para organização de pastas e subpastas
-- CAMINHO: define o endereço completo e nome do arquivo final, incluindo hora da execução
+📄 Executável.xlsm
+    └── Arquivo principal habilitado para macros (VBA).
 
-IMPORTANTE: Substitua a partição inicial do caminho (“K:\”) pelo caminho correspondente à sua máquina local.
+📄 Readme.txt
+    └── Este documento.
 
-EXEMPLO DE CAMINHO EM MINHA MÁQUINA
-K:\Automação com VBA\RELATÓRIOS ACOMP. VENDAS DIÁRIO\2025\OUTUBRO\ACOMP. VENDAS DIÁRIO - 2 OUTUBRO 2025 - 17.24.32Hrs
+## Configuração Inicial
 
-FUNCIONAMENTO DO CÓDIGO VBA
+Dentro do arquivo Executável.xlsm, acesse a aba “EXEC” e configure:
 
-Modulo1 - Executável principal:
-- Declara variáveis de caminho
-- Chama funções do Modulo2
+Célula C2 → Insira o **caminho** dos diretórios e o **nome** desejado para o arquivo final (com data).
 
-Modulo2 - Funções por etapa:
+💡 Exemplo de Caminho (na minha máquina)
+K:\Automação com VBA\RELATÓRIOS ACOMP. VENDAS DIÁRIO\2025\OUTUBRO\ (caminho)
+ACOMP. VENDAS DIÁRIO - 2 OUTUBRO 2025 - 17.24.32Hrs (nome arquivo)
+
+## Observações
+
+- Certifique-se de que os diretórios e subpastas já existam antes da execução.
+
+- As macros devem estar habilitadas para o funcionamento correto do script.
+
+## Resumo de Funções
+
 1. Atualiza consultas do PowerQuery
 2. Copia tabela da aba "BASE" do arquivo EXEC
 3. Abre arquivo Matriz e limpa conteúdo da aba "BASE PRODUÇÃO" (linha 3 em diante)
@@ -41,16 +48,8 @@ Modulo2 - Funções por etapa:
 6. Cria array com nomes das abas e limpa fórmulas via looping
 7. Salva o arquivo final no caminho especificado na célula “C2”
 
-COMO EXECUTAR
-1. Habilite a guia "Desenvolvedor" no Excel
-2. Acesse o editor VBA: Desenvolvedor > Visual Basic
-3. Navegue pelos módulos e execute o código conforme necessário
+# USO PROFISSIONAL OU EDUCACIONAL
 
-OBSERVAÇÕES
-- Certifique-se de que os arquivos referenciados estejam no local correto
-- O formato ".xlsm" é obrigatório para execução de macros
-- O projeto pode ser adaptado para diferentes rotinas de trabalho
-
-USO PROFISSIONAL OU EDUCACIONAL
 Este projeto pode ser utilizado como base para estudos de automação com VBA,
+
 integração com PowerQuery e manipulação de dados em Excel.
