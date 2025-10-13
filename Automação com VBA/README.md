@@ -29,6 +29,7 @@ Dentro do arquivo Executável.xlsm, acesse a aba “EXEC” e configure:
 Célula C2 → Insira o **caminho** dos diretórios e o **nome** desejado para o arquivo final (com data).
 
 💡 Exemplo de Caminho (na minha máquina)
+
 K:\Automação com VBA\RELATÓRIOS ACOMP. VENDAS DIÁRIO\2025\OUTUBRO\ (caminho)
 ACOMP. VENDAS DIÁRIO - 2 OUTUBRO 2025 - 17.24.32Hrs (nome arquivo)
 
@@ -53,3 +54,4 @@ ACOMP. VENDAS DIÁRIO - 2 OUTUBRO 2025 - 17.24.32Hrs (nome arquivo)
 Este projeto pode ser utilizado como base para estudos de automação com VBA,
 
 integração com PowerQuery e manipulação de dados em Excel.
+
