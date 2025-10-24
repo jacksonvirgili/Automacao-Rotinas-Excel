@@ -1,6 +1,6 @@
 # Sobre
 
-Repositório dedicado a projetos  em VBA (Visual Basic for Applications) desenvolvidos para automatizar tarefas no excel, otimizando tempo e reduzindo erros manuais em processo repetitivos.
+Repositório com projetos em VBA (Visual Basic for Applications) para automatizar tarefas no Excel, incluindo rotinas de ETL, manipulação de planilhas e envio de e-mails, otimizando tempo e reduzindo erros em processos repetitivos.
 
 ## Objetivo
 
